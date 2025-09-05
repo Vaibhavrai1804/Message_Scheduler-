@@ -17,7 +17,7 @@ clients = Client(account_sid, auth_token)
 def send_message(number,message_body):
     try:
         message=clients.messages.create(
-            from_="whatsapp:+14155238886",
+            from_=# twilio whatsapp number 
             body=message_body,
             to=f'whatsapp:{number}'
         )
@@ -51,3 +51,4 @@ else:
     # send the message 
     send_message(number,message_body)
         
+
